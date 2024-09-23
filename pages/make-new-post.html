@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../js/manifest.webmanifest">
+    <link rel="shortcut icon" href="../icons/logo-circle.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../icons/icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/icons/167.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/new-post.css">
+    <title>AniPal - New Post</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="top-elements">
+                    <a href="./homepage.html" class="arrow-back"><img src="../icons/arrow-back.svg" alt="Back" class="img-fluid img-arrow-back"></a>
+                    <h1 class="new-post-text">New Post</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 post-pic-col">
+                <form action="./homepage.html" method="post" enctype="multipart/form-data" class="form">
+                    <div class="new-post-image-div">
+                        <img id="new-post-image-preview">
+                        <input type="file" name="new_post_photo" class="custom-file-input" id="newPostPhoto" accept="image/*" onchange="previewImageCover(event)">
+                        <label for="newPostPhoto" class="custom-file-label new-post-change-btn"><img id="icon" src="../icons/gallery-icon.svg" class="gallery-icon-style" alt="Add new post"></label>
+                    </div>
+                    <textarea name="" id="" placeholder="Add description...." class="description-textarea"></textarea>
+
+                    <div class="place-div">
+                        <div class="add-place-div">
+                            <img src="../icons/add-place-icon.svg" alt="" class="add-place-icon">
+                            <p class="add-place-text">Add place</p>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6634.041605257829!2d-118.1510952!3d33.7601283!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd3054c2993de1%3A0xce3d629653af31c4!2z0JvQvtC90LMt0JHQuNGHINCh0LjRgtC4INCR0LjRhw!5e0!3m2!1sru!2sua!4v1727106536255!5m2!1sru!2sua" class="map-style" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="publish-btn-div"><button type="submit" class="publish-btn">Publish</button></div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/make-new-post.js"></script>
+</body>
+</html>

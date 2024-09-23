@@ -1,0 +1,569 @@
+body{
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(16,13,11,1) 0%, rgba(0,0,0,1) 100%) no-repeat;
+    margin-bottom: 160px;
+}
+
+.img-logo{
+    position: absolute;
+    left: 25px;
+    top: 45px;
+}
+
+@media (min-width: 100px) {
+    .img-deco-paws{
+        position: absolute;
+        right: 0px;
+        top: 45px;
+    }
+
+    .new-post-container{
+        width: 95%;
+        height: auto;
+        background: rgba(250, 223, 194, 17%);
+        padding: 11px 14px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 116px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .user-profile-pic{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .whatss-new-text{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        text-decoration: none;
+    }
+
+    .new-post-container:hover{
+        filter: brightness(120%);
+    }
+
+    .new-post-container:active{
+        filter: brightness(150%);
+    }
+
+    .post-container{
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post-author-container{
+        position: relative;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        align-items: center;
+    }
+
+    .img-author-of-post-profile-pic{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+    }
+
+    .user-name-and-place{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .user-name-link{
+        color: white;
+        font-family: 'Inter', 'sans-serif';
+        font-weight: 500;
+        font-size: 13px;
+        text-decoration: none;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .place-of-post-link{
+        color: white;
+        font-family: 'Inter', 'sans-serif';
+        font-weight: 500;
+        font-size: 12px;
+        text-decoration: none;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .user-name-link:hover, .place-of-post-link:hover{
+        color: white;
+    }
+
+    .user-name-link:active, .place-of-post-link:active{
+        color: white;
+    }
+
+    .img-post{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 100%;
+        height: 436px;
+    }
+
+    .likes-comments-container{
+        position: relative;
+        margin-left: 18px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .likes-container, .comments-container{
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .likes-btn{
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background: url(../icons/like-inactive.svg) no-repeat;
+        border: 0px solid transparent;
+        transition: all 0.2s ease;
+    }
+    .likes-btn.active {
+        background: url(../icons/like-active.svg) no-repeat;
+        transition: all 0.2s ease;
+    }
+    .comments-btn{
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background: url(../icons/comments-inactive.svg) no-repeat;
+        border: 0px solid transparent;
+    }
+
+    .comments-amount, .likes-amount{
+        color: white;
+        font-family: 'Inter', 'sans-serif';
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .text-about-friends-container{
+        position: relative;
+        margin-top: 8px;
+        margin-left: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+
+    }
+
+    .friend-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .friend-profile-link-liked-others{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+        text-decoration: none;
+    }
+    .friend-profile-pic{
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+    }
+    .friend-user-name{
+        color: white;
+        font-family: 'Inter', 'sans-serif';
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .and-text{
+        color: white;
+        font-family: 'Inter', 'sans-serif';
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .amount-others-liked-post{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+        text-decoration: none;
+    }
+
+    .amount-of-likes, .others-liked-this-post-text{
+        color: white;
+        font-family: 'Inter', 'sans-serif';
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .post-text{
+        position: relative;
+        margin-top: 8px;
+        margin-left: 18px;
+        color: white;
+        font-family: 'Inter', 'sans-serif';
+        font-weight: 500;
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .navbar-container{
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+        padding: 20px 38px;
+        flex-direction: row;
+        align-items: center;
+        background: #FF5916;
+        width: 100%;
+        border-top-left-radius: 23px;
+        border-top-right-radius: 23px;
+        box-shadow: 0px -5px 5px rgba(189, 54, 0, 37%);
+    }
+
+    .circle-container-user-profile{
+        width: 84px;
+        height: 84px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-profile-pic-navbar{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        display: flex;
+        gap: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-nav-link{
+        display: flex;
+        position: relative;
+        margin-left: 38px;
+    
+    }
+
+    .notifications-nav-link{
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        margin-right: 38px;
+    }
+
+    .exit-nav-link{
+        display: flex;
+        position: relative;
+        margin-left: 0px;
+    }
+
+
+    .profile-page-nav-link{
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .home-navbar-icon, .search-navbar-icon, .notificaation-navbar-icon, .exit-navbar-icon{
+        width: auto;
+        height: 30px;
+    }
+}
+
+@media (min-width: 576px){
+    .post-container{
+        width: 40%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-container{
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+        padding: 20px 38px;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-direction: row;
+        align-items: center;
+        background: #FF5916;
+        width: 100%;
+        border-top-left-radius: 23px;
+        border-top-right-radius: 23px;
+        box-shadow: 0px -5px 5px rgba(189, 54, 0, 37%);
+    }
+
+    .home-nav-link{
+        margin-left: 70px;
+    }
+
+    .search-nav-link{
+        display: flex;
+        position: relative;
+        margin-left: 130px;
+    
+    }
+
+    .notifications-nav-link{
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        margin-right: 130px;
+    }
+
+    .exit-nav-link{
+        display: flex;
+        position: relative;
+        margin-left: 0px;
+        margin-right: 70px;
+
+    }
+
+
+    .profile-page-nav-link{
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .home-navbar-icon, .search-navbar-icon, .notificaation-navbar-icon, .exit-navbar-icon{
+        width: auto;
+        height: 40px;
+    }
+}
+
+@media (min-width: 768px){
+    .post-container{
+        width: 40%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-container{
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+        padding: 20px 38px;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-direction: row;
+        align-items: center;
+        background: #FF5916;
+        width: 100%;
+        border-top-left-radius: 23px;
+        border-top-right-radius: 23px;
+        box-shadow: 0px -5px 5px rgba(189, 54, 0, 37%);
+    }
+
+    .home-nav-link{
+        margin-left: 70px;
+    }
+
+    .search-nav-link{
+        display: flex;
+        position: relative;
+        margin-left: 130px;
+    
+    }
+
+    .notifications-nav-link{
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        margin-right: 130px;
+    }
+
+    .exit-nav-link{
+        display: flex;
+        position: relative;
+        margin-left: 0px;
+        margin-right: 70px;
+
+    }
+
+
+    .profile-page-nav-link{
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .home-navbar-icon, .search-navbar-icon, .notificaation-navbar-icon, .exit-navbar-icon{
+        width: auto;
+        height: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .post-container{
+        width: 40%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-container{
+        position: fixed;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        display: flex;
+        padding: 38px 20px;
+        padding-bottom: 38px;
+        padding-top: 38px;
+        flex-direction: column;
+        justify-content: center;
+        background: #FF5916;
+        width: auto;
+        height: 60%;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 23px;
+        box-shadow: 0px -5px 5px rgba(189, 54, 0, 37%);
+    }
+
+    .profile-page-nav-link{
+        position: absolute;
+        left: 0px;
+        height: 118px;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+
+    
+    .circle-container-user-profile{
+        width: 118px;
+        height: 118px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-profile-pic-navbar{
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        display: flex;
+        gap: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-nav-link{
+        display: flex;
+        position: relative;
+        margin-bottom: 80px;
+        margin-left: 0px;
+        margin-right: 0px;
+    
+    }
+
+    .notifications-nav-link{
+        position: relative;
+        display: flex;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        margin-top: 80px;
+    
+    }
+
+    .home-nav-link{
+        position: relative;
+        display: flex;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 7px;
+        margin-bottom: 50px;    
+    }
+
+    .exit-nav-link{
+        display: flex;
+        position: relative;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .home-navbar-icon, .search-navbar-icon, .notificaation-navbar-icon, .exit-navbar-icon{
+        width: auto;
+        height: 40px;
+    }
+
+
+}
+
+@media (min-width: 1000px) {
+    .post-container{
+        width: 20%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+    }
+}

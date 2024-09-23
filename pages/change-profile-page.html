@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../js/manifest.webmanifest">
+    <link rel="shortcut icon" href="../icons/logo-circle.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../icons/icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/icons/167.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/change-profile-page.css">
+    <title>AniPal - Change profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="top-elements">
+                    <a href="" class="arrow-back"><img src="../icons/arrow-back.svg" alt="Back" class="img-fluid img-arrow-back"></a>
+                    <h1 class="change-profile-text">Change profile</h1>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 user-pic-col">
+                <form action="./profile-page.html" method="post" enctype="multipart/form-data" class="form">
+                    <div class="user-pics">
+                        <div class="profile-cover-image-div">
+                            <img id="profile-cover-image-preview">
+                            <input type="file" name="user_cover_photo" class="custom-file-input" id="userCoverPhoto" accept="image/*" onchange="previewImageCover(event)">
+                            <label for="userCoverPhoto" class="custom-file-label profile-cover-change-btn"><img src="../icons/change-profile-button-icon.svg" alt="Change profile cover"></label>
+                        </div>
+                        <div class="profile-image-div">
+                            <img id="profile-image-preview">
+                            <input type="file" name="user_photo" class="custom-file-input" id="userPhoto" accept="image/*" onchange="previewImage(event)">
+                            <label for="userPhoto" class="custom-file-label profile-img-change-btn"><img src="../icons/change-profile-button-icon.svg" alt="Change profile image"></label>
+                        </div>
+                    </div>
+                    <table class="main-info-form">
+                        <tr>
+                            <td><label for="user-name" class="username-input-label">User name</label></td>
+                            <td><input type="text" class="username-input" placeholder="goldie_344"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="name" class="name-input-label">Name</label></td>
+                            <td><input type="text" class="name-input" placeholder="Goldie"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="surname" class="surname-input-label">Surame</label></td>
+                            <td><input type="text" class="surname-input" placeholder="Retriever"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email" class="email-input-label">Email</label></td>
+                            <td><input type="email" class="email-input" placeholder="goldie_344@mail.com"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender" class="gender-select-label">Gender</label></td>
+                            <td><select name="" class="gender-select" id="">
+                                <option selected>Select gender</option>
+                                <option value="F">F</option>
+                                <option value="M">M</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="name" class="about-me-textarea-label">About me</label></td>
+                            <td><textarea name="" class="textarea" placeholder="Write about you" id=""></textarea></td>
+                        </tr>
+                    </table>
+                    
+
+                    <button type="submit" class="save-changes-btn">Save Changes</button>
+                </form>
+                
+                
+            </div>
+        </div>
+
+    </div>
+    <div class="navbar-container">
+        <a href="./homepage.html" class="home-nav-link"><img src="../icons/home-navbar-inactive.svg" alt="Home" class="img-fluid home-navbar-icon"></a>
+        <a href="./search.html" class="search-nav-link"><img src="../icons/search-navbar.svg" alt="Search" class="img-fluid search-navbar-icon"></a>
+
+        <a href="./profile-page.html" class="profile-page-nav-link"><div class="circle-container-user-profile"><img src="../img/Без названия (1).jpg" alt="Profile" class="img-fluid user-profile-pic-navbar"></div></a>
+
+        <a href="./notifications.html" class="notifications-nav-link"><img src="../icons/notification-navbar-inactive.svg" alt="Notifications" class="img-fluid notificaation-navbar-icon"></a>
+        <a href="../log-in.html" class="exit-nav-link"><img src="../icons/exit-navbar.svg" alt="Exit" class="img-fluid exit-navbar-icon"></a>
+
+    
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/change-profile-page.js"></script>
+</body>
+</html>

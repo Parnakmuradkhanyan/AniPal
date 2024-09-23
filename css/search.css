@@ -1,0 +1,189 @@
+body{
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(16,13,11,1) 0%, rgba(0,0,0,1) 100%) no-repeat;
+    margin-bottom: 160px;
+}
+
+@media (min-width: 100px) {
+    .top-search-panel-conatiner{
+        width: 80%;
+    }
+    .top-search-panel-container-cancel-btn{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 56px;
+
+    }
+
+    .search-container{
+        background: rgba(250,223,194, 17%);
+        display: flex;
+        flex-direction: row;
+        border-radius: 12px;
+        transition: all 0.2s ease;
+        margin-left: 5px;
+    }
+
+    .search-new-friends-input{
+        width: 70%;
+        background: transparent;
+        border: 0px solid transparent;
+        border-radius: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 14px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .search-btn{
+        background: #FF5916;
+        border: 0px solid transparent;
+        border-radius: 12px;
+        box-shadow: 2px 2px 6px rgba(189, 54, 0, 37%);
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease;
+    }
+
+    .search-btn-icon{
+        width: 24px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .cancel-btn{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: none;
+        margin-bottom: 0px;
+        transition: all 0.2s ease;
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        margin-right: 8px;
+    }
+
+    .cancel-btn:hover{
+        color: white;
+        filter: brightness(90%);
+    }
+    .cancel-btn:active{
+        color: white;
+        filter: brightness(80%);
+    }
+
+    .search-container:hover, .search-btn:hover{
+        filter: brightness(110%);
+    }
+
+    .search-container:active, .search-btn:active{
+        filter: brightness(120%);
+    }
+
+    .recomended-friends-container{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 28px;
+        margin-bottom: 100%;
+    }
+
+    .recomended-friend-container{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        margin-right: auto;
+        margin-left: 5px;
+    }
+    .recomended-friend-container:hover{
+        width: 80%;
+        background: rgba(250,223,194, 17%);
+        border-radius: 23px;
+        padding: 8px 4px;
+    }
+    
+
+    .recomended-friend-profile-pic{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        
+    }
+
+    .user-name-recomended-friend{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .name-recomended-friend{
+        color: rgba(255, 255, 255, 64%);
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .recomended-friend-container:hover{
+        filter: brightness(110%);
+    }
+    .recomended-friend-container:active{
+        filter: brightness(90%);
+    }
+
+}
+
+@media (min-width: 576px){
+}
+
+@media (min-width: 768px){
+    .top-search-panel-conatiner{
+        width: 85%;
+    }
+    
+    .search-new-friends-input{
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .top-search-panel-conatiner{
+        width: 85%;
+    }
+    .search-new-friends-input{
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .top-search-panel-conatiner{
+        width: 85%;
+    }
+    .search-new-friends-input{
+        width: 90%;
+    }
+
+}

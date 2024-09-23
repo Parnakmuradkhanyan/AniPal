@@ -1,0 +1,173 @@
+body{
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(255,89,22,1) 0%, rgba(198,47,1,1) 51%, rgba(80,22,27,1) 100%) no-repeat;
+    margin-bottom: 160px;
+}
+
+.logo{
+    width: 154px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+@media (min-width: 100px) {
+
+    .container-login{
+        width: 85%;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 84px;
+        padding: 50px 15px 109px 15px;
+        background-size: cover;
+        background: linear-gradient(180deg, rgba(28, 23, 20, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        border: 0px solid transparent;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 10px 10px 10px rgba(30, 9, 2, 46%);
+    }
+
+    .log-in-form{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 74px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .inputs-div{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    .user-input{
+        padding: 18px 16px;
+        background: rgba(255, 255, 255, 6%);
+        border: 1px solid #656565;
+        border-radius: 20px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        
+    }
+    .sign-up-div{
+        position: relative;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .no-account-yet-text{
+        position: relative;
+        margin-right: auto;
+        display: flex;
+        margin-left: 0px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .sign-up-link{
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        color: #FF5916;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 800;
+        text-shadow: 0px 5px 10px rgba(189, 54, 0, 37%);
+        transition: all 0.2s ease;
+    }
+
+    .login-btn{
+        background: #FF5916;
+        border: 0px solid transparent;
+        border-radius: 23px;
+        position: relative;
+        margin: 0 auto;
+        padding: 14px 104px;
+        margin-top: 30px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        box-shadow: 0px 5px 10px rgba(189, 54, 0, 37%);
+        transition: all 0.2s ease;
+    }
+
+    .sign-up-link:hover, .sign-up-link:active{
+        color: #FF5916;
+    }
+
+    .login-btn:hover, .sign-up-link:hover{
+        filter: brightness(90%);
+    }
+
+    .login-btn:active, .sign-up-link:active{
+        filter:brightness(70%);
+    }
+
+}
+
+
+@media (min-width: 576px){
+    .container-login{
+        width: 60%;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 84px;
+        padding: 50px 15px 109px 15px;
+        background-size: cover;
+        background: linear-gradient(180deg, rgba(28, 23, 20, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        border: 0px solid transparent;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 10px 10px 10px rgba(30, 9, 2, 46%);
+    }
+}
+
+@media (min-width: 768px){
+    .container-login{
+        width: 60%;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 84px;
+        padding: 50px 15px 109px 15px;
+        background-size: cover;
+        background: linear-gradient(180deg, rgba(28, 23, 20, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        border: 0px solid transparent;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 10px 10px 10px rgba(30, 9, 2, 46%);
+    }
+}
+
+@media (min-width: 992px) {
+    .container-login{
+        width: 40%;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 84px;
+        padding: 50px 15px 109px 15px;
+        background-size: cover;
+        background: linear-gradient(180deg, rgba(28, 23, 20, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        border: 0px solid transparent;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 10px 10px 10px rgba(30, 9, 2, 46%);
+    }
+}
+

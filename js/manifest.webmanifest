@@ -1,0 +1,18 @@
+{
+    "background_color": "white",
+    "description": "Abcdefg",
+    "display": "fullscreen",
+    "start_url": "../log-in.html",
+
+
+    "icons":[
+        {
+            "src": "/icons/logo-circle.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "name": "AniPal",
+    "shortname": "AniPal"
+
+}
